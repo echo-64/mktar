@@ -1,0 +1,41 @@
+{
+  "name": "mktar",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "dist/mktar.d.ts",
+  "module": "./dist/mktar.js",
+  "main": "./dist/mktar.umd.js",
+  "exports": {
+    ".": {
+      "types": "./dist/mktar.d.ts",
+      "import": "./dist/mktar.js",
+      "require": "./dist/mktar.umd.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "package.json",
+    "package-lock.json"
+  ],
+  "author": "𝖊𝖈𝖍𝖔",
+  "license": "MIT",
+  "scripts": {
+    "start": "npx vite --open",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build": "npx vite build && npm run build:types"
+  },
+  "keywords": [
+    "mtap",
+    "tar"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "vite": "^7.1.5",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "dependencies": {
+    "@chainner/node-path": "^0.1.1"
+  }
+}

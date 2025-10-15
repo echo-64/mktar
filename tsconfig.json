@@ -1,0 +1,21 @@
+{
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
+  "compilerOptions": {
+    "rootDir": "src",
+    "target": "ES2024",
+    "module": "ESNext",
+    "strict": true,
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "emitDeclarationOnly": true
+  }
+}
